@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components{
+
+  html {
+    scroll-behavior: smooth;
+  }
+  body{
+    background: rgb(22,25,39);
+    color: white;
+    font-family: sans-serif;
+    
+  }
+  
+}
