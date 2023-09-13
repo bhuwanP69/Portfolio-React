@@ -12,7 +12,7 @@ export default function Header() {
             <a href="#home" className='text-text-color cursor-pointer hover:text-text-color'>Home</a>
             <a href="#about" className=' cursor-pointer hover:text-text-color'>About</a>
             <a href="#skills" className=' cursor-pointer hover:text-text-color'>Skills</a>
-            <a href="#home" className=' cursor-pointer hover:text-text-color'>Services</a>
+            <a href="#services" className=' cursor-pointer hover:text-text-color'>Services</a>
             <a href="#home" className=' cursor-pointer hover:text-text-color'>Contact Me</a>
            
         </div>

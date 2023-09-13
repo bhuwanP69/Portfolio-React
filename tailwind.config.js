@@ -8,7 +8,8 @@ export default {
     extend: {
     colors:{
       'main-color' :"rgb(22,25,39)",
-      'text-color': '#576EE0'
+      'text-color': '#576EE0',
+      'grid-color': '#1D2135'
     }
     },
   },
