@@ -12,5 +12,8 @@
     font-family: sans-serif;
     
   }
+  .view:hover .fa-arrow-right{
+    padding-left: 5px;
+  }
   
 }

@@ -5,7 +5,7 @@ export default function About() {
   return (
   <div className="about h-screen grid justify-center pt-16 " id='about'>
     <div className="a-top flex flex-col items-center justify-center text-center ">
-    <h2 className='text-5xl'>About Me</h2>
+    <h2 className='text-4xl font-bold'>About Me</h2>
     <p className='text-text-color'>Get to know me</p>
     </div>
     <div className="a-bottom mt-10 flex justify-between">
