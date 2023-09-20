@@ -22,7 +22,7 @@ export default function About() {
                 <p className='w-24'> <span className='block text-2xl font-semibold'>04+</span> Years experience</p>
                
             </div>
-            <button className='bg-text-color font-sans font-semibold text-lg flex px-4 py-4 rounded-md'>
+            <button className='hover:bg-button-color bg-text-color font-sans font-semibold text-lg flex px-4 py-4 rounded-md transition-all'>
                 <p className='mr-2'>Download CV</p>
                 <div className="icon font-bold text-xl">
                 <iconify-icon icon="ion:download-outline"></iconify-icon>

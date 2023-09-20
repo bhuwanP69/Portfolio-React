@@ -28,7 +28,7 @@ function Main() {
         /></span></h3>
         <p className='text-lg text-gray-400'>I develop beautiful and responsive <span className='text-text-color'>SEO</span> optimized websites.</p>
         <p className='text-gray-400'>Want to take your <span className='text-text-color'>brand</span> to the next level?</p>
-        <button className='flex items-center justify-between bg-text-color w-28 px-3 font-semibold py-4 rounded-lg mb-24 mt-4 hover:bg-indigo-500'>
+        <button className='flex items-center justify-between hover:bg-button-color bg-text-color w-28 px-3 font-semibold py-4 rounded-lg mb-24 mt-4 transition-all'>
           <p className='-mt-1'>Hire Me </p>
           <div className="icon text-xl">
           <iconify-icon icon="uil:message"></iconify-icon>
