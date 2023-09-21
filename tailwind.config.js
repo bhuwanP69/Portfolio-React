@@ -10,7 +10,8 @@ export default {
       'main-color' :"rgb(22,25,39)",
       'text-color': '#576EE0',
       'grid-color': '#1D2135',
-      'button-color': '#4156c4'
+      'button-color': '#4156c4',
+      'circle':'#212740'
     }
     },
   },

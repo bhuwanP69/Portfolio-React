@@ -18,5 +18,33 @@
   .demo:hover{
     gap: 1rem;
   }
-  
+  /* Define the slide transition classes */
+.slide-enter-active {
+  animation: slide-in 0.5s ease-in-out forwards;
+}
+
+.slide-leave-active {
+  animation: slide-out 0.5s ease-in-out forwards;
+}
+
+/* Keyframes for slide-in */
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* Keyframes for slide-out */
+@keyframes slide-out {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
 }

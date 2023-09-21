@@ -14,7 +14,7 @@ export default function Header() {
             <a href="#skills" className=' cursor-pointer hover:text-text-color'>Skills</a>
             <a href="#services" className=' cursor-pointer hover:text-text-color'>Services</a>
             <a href="#portfolio" className=' cursor-pointer hover:text-text-color'>Portfolio</a>
-            <a href="#home" className=' cursor-pointer hover:text-text-color'>Contact Me</a>
+            <a href="#contact" className=' cursor-pointer hover:text-text-color'>Contact Me</a>
            
         </div>
     </div>
