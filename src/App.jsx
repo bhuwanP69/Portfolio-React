@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import About from "./routes/About";
@@ -20,6 +21,7 @@ export default function App() {
    <Services/>
    <Portfolio/>
    <Contact/>
+   <Footer/>
     </div>
     </>
   );
