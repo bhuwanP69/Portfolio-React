@@ -5,20 +5,32 @@ import Typewriter from 'typewriter-effect';
 function Main() {
   const imageMyself = 'https://live.staticflickr.com/65535/53160700296_297807ed3d_n.jpg'
   return (
-    <div className="main flex justify-between  ml-[12%] mr-[23%] mt-28">
+    <div className="main flex justify-between pt-44  pl-[12%] pr-[23%] " id='home'>
         
         <div className="left text-text-color text-xl mt-2 ">
           <div className="social grid gap-10">
-          <i class="fa-brands fa-facebook cursor-pointer hover:opacity-90"></i>
-          <i class="fa-brands fa-twitter cursor-pointer hover:opacity-90"></i>
-          <i class="fa-brands fa-linkedin cursor-pointer hover:opacity-90"></i>
-          <i class="fa-brands fa-whatsapp cursor-pointer hover:opacity-90"></i>
-          <i class="fa-brands fa-github cursor-pointer hover:opacity-90"></i>
+            <a href="">
+
+          <i class="fa-brands fa-facebook cursor-pointer hover:opacity-80"></i>
+            </a>
+            <a href="https://twitter.com/BhuwanP69" target='_blank'>
+          <i class="fa-brands fa-twitter cursor-pointer hover:opacity-80"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/bhuwan-paudel-591468224/
+            " target='_blank'>
+          <i class="fa-brands fa-linkedin cursor-pointer hover:opacity-80"></i>
+            </a>
+            <a href="" target='_blank'>
+          <i class="fa-brands fa-whatsapp cursor-pointer hover:opacity-80"></i>
+            </a>
+            <a href="https://github.com/bhuwanP69" target='_blank'>
+          <i class="fa-brands fa-github cursor-pointer hover:opacity-80"></i>
+            </a>
           </div>
 
         </div>
         <div className="middle grid gap-4 font-semibold w-80  ">
-          <h1 className='text-[46px] font-semibold'>Hi, I'm Bhuwan</h1>
+          <h1 className='text-[46px] font-semibold whitespace-nowrap'>Hi, I'm Bhuwan</h1>
           <h3 className='flex text-2xl text-gray-400'>Creatve <span className='ml-1 text-text-color'> <Typewriter
         options={{
             strings: ['web developer.'],

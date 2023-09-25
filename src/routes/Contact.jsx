@@ -1,7 +1,7 @@
 
 export default function Contact() {
   return (
-    <div className="contact h-screen pt-20" id='contact'>
+    <div className="contact  pb-20 pt-20" id='contact'>
         <div className="services text-center justify-center">
             <h2 className="text-4xl font-semibold">Contact Me</h2>
             <p className="text-text-color text-sm pt-2">Get in touch</p>
@@ -61,7 +61,7 @@ export default function Contact() {
             </div>
             <div className="last flex gap-6 items-start">
           <div className="type relative">
-            <textarea type="text"   required className=" h-52 pt-10 pl-5 resize bg-grid-color rounded-lg outline-none" />
+            <textarea type="text"   required className=" h-56 pt-10 pl-5 resize bg-grid-color rounded-lg outline-none" />
             <label className="absolute left-3 top-3 text-sm">Additional message</label>
             </div>
             <button className='flex items-center justify-between hover:bg-button-color bg-text-color w-36 h-14 px-3  py-4 rounded-lg   transition-all'>

@@ -12,7 +12,7 @@ export default function App() {
 
   return (
     <>
-    <div className="body bg-main-color">
+    <div className="body  bg-main-color">
 
    <Header/>
    <Main/>

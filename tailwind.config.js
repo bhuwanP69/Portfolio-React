@@ -12,7 +12,8 @@ export default {
       'grid-color': '#1D2135',
       'button-color': '#4156c4',
       'circle':'#212740',
-      'footer':'#0E101B'
+      'footer':'#0E101B',
+      'hover': '#6e7cc2'
     }
     },
   },
