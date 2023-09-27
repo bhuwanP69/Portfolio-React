@@ -21,6 +21,11 @@
   .demo:hover{
     gap: 1rem;
   }
+  .back-to-top.visible {
+    bottom: 80px;
+    opacity: 1;
+
+  }
   /* Define the slide transition classes */
 .slide-enter-active {
   animation: slide-in 0.5s ease-in-out forwards;

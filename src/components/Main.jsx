@@ -10,11 +10,12 @@ function Main() {
         <div className="left text-text-color text-xl mt-2 ">
           <div className="social grid gap-10">
             <a href="">
-
-          <i class="fa-brands fa-facebook cursor-pointer hover:opacity-80"></i>
+            <i class="fa-brands fa-square-facebook cursor-pointer hover:opacity-80"></i>
             </a>
             <a href="https://twitter.com/BhuwanP69" target='_blank'>
-          <i class="fa-brands fa-twitter cursor-pointer hover:opacity-80"></i>
+              <div className="div cursor-pointer hover:opacity-80 text-2xl">
+            <iconify-icon icon="ri:twitter-line"></iconify-icon>
+              </div>
             </a>
             <a href="https://www.linkedin.com/in/bhuwan-paudel-591468224/
             " target='_blank'>

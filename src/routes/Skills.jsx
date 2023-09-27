@@ -154,7 +154,7 @@ export default function Skills() {
                     <p className="">Patan multiple campus</p>
                     <div className="icon flex gap-2 items-center pt-2">
                     <i class="fa-solid fa-calendar-days"></i>
-                    <p>2022 - Date </p>
+                    <p>2021 - Date </p>
                     </div>
                 </div>
 
