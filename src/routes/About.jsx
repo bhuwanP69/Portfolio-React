@@ -17,9 +17,10 @@ export default function About() {
             <p className='text-[16px] text-gray-400'>Got a project? Hire me and enjoy quality & excellence in delivery.</p>
 
             <div className="numbers my-8 -ml-4 flex text-sm text-center">
-                <p className='w-24'> <span className='block text-2xl font-semibold'>04+</span> Years experience</p>
-                <p className='w-24'> <span className='block text-2xl font-semibold'>04+</span> Years experience</p>
-                <p className='w-24'> <span className='block text-2xl font-semibold'>04+</span> Years experience</p>
+                <p className='w-24 text-gray-400'> <span className='block text-2xl font-semibold text-white'>04+</span> Years experience</p>
+                <p className='w-24 text-gray-400'> <span className='block text-2xl font-semibold text-white'>27+</span> 
+                Completed Project</p>
+                <p className='w-24 text-gray-400'> <span className='block text-2xl font-semibold text-white'>04+</span>Helped Companies</p>
                
             </div>
             <button className='hover:bg-button-color bg-text-color font-sans font-semibold text-lg flex px-4 py-4 rounded-md transition-all'>

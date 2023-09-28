@@ -1,8 +1,12 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
-
-
 function Main() {
+  //for whatsapp number
+  const handleWhatsAppClick = (phoneNumber) => {
+    const message = encodeURIComponent('Hi');
+    const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
+    window.open(url, '_blank');
+  };
   const imageMyself = 'https://live.staticflickr.com/65535/53160700296_297807ed3d_n.jpg'
   return (
     <div className="main flex justify-between pt-44  pl-[12%] pr-[23%] " id='home'>
@@ -21,7 +25,7 @@ function Main() {
             " target='_blank'>
           <i class="fa-brands fa-linkedin cursor-pointer hover:opacity-80"></i>
             </a>
-            <a href="" target='_blank'>
+            <a href=""  onClick={() => handleWhatsAppClick('+977 9861658435')}>
           <i class="fa-brands fa-whatsapp cursor-pointer hover:opacity-80"></i>
             </a>
             <a href="https://github.com/bhuwanP69" target='_blank'>
@@ -41,14 +45,13 @@ function Main() {
         /></span></h3>
         <p className='text-lg text-gray-400'>I develop beautiful and responsive <span className='text-text-color'>SEO</span> optimized websites.</p>
         <p className='text-gray-400'>Want to take your <span className='text-text-color'>brand</span> to the next level?</p>
-        <button className='flex items-center justify-between hover:bg-button-color bg-text-color w-28 px-3 font-semibold py-4 rounded-lg mb-24 mt-4 transition-all'>
+        <button className='flex items-center justify-between hover:bg-button-color bg-text-color w-28 px-3 font-semibold py-4 rounded-lg mb-24 mt-4 transition-all' onClick={() => handleWhatsAppClick('+977 9861658435')}>
           <p className='-mt-1'>Hire Me </p>
           <div className="icon text-xl">
           <iconify-icon icon="uil:message"></iconify-icon>
           </div>
           
         </button>
-
         <div className="scroll  flex items-center -mt-2 animate-bounce cursor-pointer transition-all">
           <div className="mouse text-3xl text-text-color ">
           <iconify-icon icon="mingcute:mouse-line"></iconify-icon>

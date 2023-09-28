@@ -126,9 +126,6 @@ const renderCircles = () => {
         <div className="bottom pt-16 flex  text-text-color  justify-center">
         {renderCircles()}
            </div>
-
-       
-
     </div>
   )
 }

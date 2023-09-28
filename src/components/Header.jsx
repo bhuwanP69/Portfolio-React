@@ -5,8 +5,6 @@ export default function Header() {
 
   const handleLinkClick = (link) => {
     setActiveLink(link);
-
-  
   };
  
   return (

@@ -4,8 +4,6 @@ export default function Footer() {
   return (
     <div className="footer  w-full  grid justify-center bg-footer  pt-10 h-72">
       <div className="flex gap-28">
-
-
          <div className=" text-start">
             <h2 className="text-4xl font-semibold">Bhuwan</h2>
             <p className="text-text-color text-sm pt-2 whitespace-nowrap">Creative web developer</p>
@@ -29,16 +27,12 @@ export default function Footer() {
             <a href="" className=' cursor-pointer transition-all hover:text-hover text-2xl'>
             <iconify-icon icon="ri:twitter-line"></iconify-icon>
             </a>
-           
-           
         </div>
       </div>
 
       <div className="last text-center text-sm text-gray-400 pt-10 font-sans">
         <p>© Tim Okonkwo. All right reserved.</p>
       </div>
-
-
     </div>
   )
 }
