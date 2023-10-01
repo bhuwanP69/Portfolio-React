@@ -9,7 +9,7 @@ function Main() {
   };
   const imageMyself = 'https://live.staticflickr.com/65535/53160700296_297807ed3d_n.jpg'
   return (
-    <div className="main flex justify-between pt-44  pl-[12%] pr-[23%] " id='home'>
+    <div className="main flex justify-between pt-20 md:pt-44  pl-[12%] pr-[23%] " id='home'>
         
         <div className="left text-text-color text-xl mt-2 ">
           <div className="social grid gap-10">
@@ -64,7 +64,7 @@ function Main() {
 
         </div>
         <div className="right w-64 mr-[15 mt-5">
-          <img src={imageMyself} alt="" />
+          <img src={imageMyself} alt=""  className='w-64'/>
 
         </div>
     </div>

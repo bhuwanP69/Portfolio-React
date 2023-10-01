@@ -9,12 +9,12 @@ export default function Header() {
  
   return (
     <header className='fixed top-0 right-0 left-0 z-50'>
-    <div className="header flex justify-between  items-center font-semibold font-sans ml-[12%] mr-[15%] h-16">
-        <div className="left">
+    <div className="header flex justify-between  items-center font-semibold font-sans ml-[12%] mr-[15%] h-0 md:h-16">
+        <div className="left hidden md:flex">
             <h1 className='cursor-pointer hover:text-text-color'>Bhuwan</h1>
 
         </div>
-        <div className="right flex justify-between w-[50%]  ">
+        <div className="right hidden mr-20 md:flex  lg:mr-0 gap-6 w-[50%]  ">
             <a
             href="#home"
             className={` cursor-pointer hover:text-text-color ${activeLink === 'home' ? ' text-text-color' : ''}`}
@@ -31,7 +31,7 @@ export default function Header() {
           </a>
           <a
             href="#skills"
-            className={`cursor-pointer hover:text-text-color ${activeLink === 'skills' ? 'active text-text-color' : ''}`}
+            className={`cursor-pointer hover:text-text-color  ${activeLink === 'skills' ? 'active text-text-color' : ''}`}
             onClick={() => handleLinkClick('skills')}
           >
             Skills
@@ -46,14 +46,14 @@ export default function Header() {
           </a>
           <a
             href="#portfolio"
-            className={`cursor-pointer hover:text-text-color ${activeLink === 'portfolio' ? 'active text-text-color' : ''}`}
+            className={`cursor-pointer hover:text-text-color  ${activeLink === 'portfolio' ? 'active text-text-color' : ''}`}
             onClick={() => handleLinkClick('portfolio')}
           >
             Portfolio
           </a>
           <a
             href="#contact"
-            className={`cursor-pointer hover:text-text-color ${activeLink === 'contact' ? 'active text-text-color' : ''}`}
+            className={`cursor-pointer hover:text-text-color whitespace-nowrap ${activeLink === 'contact' ? 'active text-text-color' : ''}`}
             onClick={() => handleLinkClick('contact')}
           >
             Contact Me

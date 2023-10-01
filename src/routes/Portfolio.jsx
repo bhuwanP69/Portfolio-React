@@ -15,12 +15,14 @@ export function Grid1() {
       
     </div>
     <div className="right w-80 font-sans">
-      <h3 className="text-xl font-semibold">Modern Construction Website</h3>
-      <p className="text-gray-400 pb-3 text-lg">Responsive modern website with adaptable UI components for Ostruct group of company. Responsive in all device</p>
+      <h3 className="text-xl font-semibold">Modern Consultancy Website</h3>
+      <p className="text-gray-400 pb-3 text-lg">Responsive modern website with adaptable UI components for Kdr Consultancy. Responsive in all device</p>
+        <a href="https://kdrsingle.vercel.app/" target="_blank">
       <button className="demo   w-28 flex items-center gap-2 px-5 py-4 bg-text-color  hover:opacity-80 rounded-lg transition-all ">
         <p>Demo</p>
         <i class="fa-solid fa-arrow-right text-sm"></i>
       </button>
+        </a>
     </div>
    </div>
   )
@@ -34,17 +36,18 @@ export function Grid2() {
       
     </div>
     <div className="right w-80 font-sans">
-      <h3 className="text-xl font-bold w-64 pb-1">Responsive Website for Plantex</h3>
-      <p className="text-gray-400 pb-3 text-lg">Beautifully designed website for Plantex, a plant company. Highly adaptable and easy to navigate.</p>
+      <h3 className="text-xl font-bold w-64 pb-1">Log In Form</h3>
+      <p className="text-gray-400 pb-3 text-lg">It is Log In form with register.</p>
+      <a href="https://registerloginwebsite.netlify.app/" target="_blank">
       <button className=" demo  w-28 flex items-center gap-3 px-5 py-4 hover:bg-button-color bg-text-color  rounded-lg  transition-all">
         <p className="font-bold">Demo</p>
         <i class="fa-solid fa-arrow-right text-sm"></i>
       </button>
+      </a>
     </div>
    </div>
   )
 }
-
 export function Grid3() {
   return (
    <div className="grid1  pl-8  h-72 pt-10  flex gap-16 pb-10 justify-center hover:shadow-xl transition-all">
@@ -53,19 +56,18 @@ export function Grid3() {
       
     </div>
     <div className="right w-80 font-sans ">
-      <h3 className="text-xl font-bold">Beautiful Landing page for Easybank</h3>
-      <p className="text-gray-400 pb-6 text-lg ">Easybank landing page with modern and responsive UI.</p>
-      <button className="demo  w-28 flex items-center gap-3 px-5 py-4 hover:bg-button-color bg-text-color  rounded-lg  transition-all ">
+      <h3 className="text-xl font-bold">Github live users Loading</h3>
+      <p className="text-gray-400 pb-6 text-lg ">Live User Filter using search</p>
+      <a href="https://liveuserfeeds.netlify.app/" target="_blank">
+      <button className="demo w-28 flex items-center gap-3 px-5 py-4 hover:bg-button-color bg-text-color  rounded-lg  transition-all ">
         <p>Demo</p>
         <i class="fa-solid fa-arrow-right text-sm"></i>
       </button>
+      </a>
     </div>
    </div>
   )
 }
-
-
-
 export default function Portfolio() {
   const slideData = [
     <Grid1/>,
