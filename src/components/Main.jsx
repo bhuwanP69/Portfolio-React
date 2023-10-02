@@ -9,9 +9,9 @@ function Main() {
   };
   const imageMyself = 'https://live.staticflickr.com/65535/53160700296_297807ed3d_n.jpg'
   return (
-    <div className="main flex justify-between pt-20 md:pt-44  pl-[12%] pr-[23%] " id='home'>
-        
-        <div className="left text-text-color text-xl mt-2 ">
+    <div className="main flex justify-between pt-20 md:pt-44 pb-96 md:pb-0  pl-[12%] pr-[23%] " id='home'>
+        {/* left  */}
+        <div className="left flex-initial text-text-color text-xl mt-2 ">
           <div className="social grid gap-10">
             <a href="">
             <i class="fa-brands fa-square-facebook cursor-pointer hover:opacity-80"></i>
@@ -33,8 +33,9 @@ function Main() {
             </a>
           </div>
 
+          {/* middle */}
         </div>
-        <div className="middle grid gap-4 font-semibold w-80  ">
+        <div className="middle absolute top-96 md:top-0 md:relative  grid gap-4 font-semibold w-80  ">
           <h1 className='text-[46px] font-semibold whitespace-nowrap'>Hi, I'm Bhuwan</h1>
           <h3 className='flex text-2xl text-gray-400'>Creatve <span className='ml-1 text-text-color'> <Typewriter
         options={{
@@ -63,7 +64,8 @@ function Main() {
         </div>
 
         </div>
-        <div className="right w-64 mr-[15 mt-5">
+        {/* right  */}
+        <div className="right flex-initial w-64 mr-[15 mt-5">
           <img src={imageMyself} alt=""  className='w-64'/>
 
         </div>

@@ -13,6 +13,7 @@
     background: rgb(22,25,39);
     color: white;
     font-family: sans-serif;
+    overflow-x:hidden;
     
   }
   .view:hover .fa-arrow-right {
