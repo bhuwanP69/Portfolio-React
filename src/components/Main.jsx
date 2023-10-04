@@ -53,7 +53,7 @@ function Main() {
           </div>
           
         </button>
-        <div className="scroll  flex items-center -mt-2 animate-bounce cursor-pointer transition-all">
+        <div className="scroll hidden md:flex items-center -mt-2 animate-bounce cursor-pointer transition-all">
           <div className="mouse text-3xl text-text-color ">
           <iconify-icon icon="mingcute:mouse-line"></iconify-icon>
           </div>

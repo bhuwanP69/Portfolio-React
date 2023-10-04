@@ -2,7 +2,6 @@ import { useState } from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircle as faCircleSolid } from '@fortawesome/free-solid-svg-icons';
 
-
 const img1 = './src/images/portfolio1.jpg'
 const img2 = './src/images/portfolio2.jpg'
 const img3 = './src/images/portfolio3.jpg'
@@ -30,10 +29,9 @@ export function Grid1() {
 
 export function Grid2() {
   return (
-   <div className="grid1  pl-8  h-72 pt-10  flex gap-16 pb-10 justify-center hover:shadow-xl transition-all   ">
+   <div className="grid2  pl-8  h-72 pt-10  flex gap-16 pb-10 justify-center hover:shadow-xl transition-all   ">
     <div className="left w-80  ">
       <img src={img2} alt="portfolio1" className="rounded-xl" />
-      
     </div>
     <div className="right w-80 font-sans">
       <h3 className="text-xl font-bold w-64 pb-1">Log In Form</h3>
@@ -79,12 +77,9 @@ export default function Portfolio() {
      const handleRightClick = () => {
        setActiveSlide((prevSlide) => (prevSlide + 1) % slideData.length);
      };
-   
      const handleLeftClick = () => {
        setActiveSlide((prevSlide) => (prevSlide - 1 + slideData.length) % slideData.length);
      };
-    
-     
      const handleCircleClick = (index) => {
        setActiveSlide(index);
      };
@@ -116,10 +111,12 @@ const renderCircles = () => {
           <i class="fa-solid fa-chevron-left text-4xl text-text-color"></i>
           </div>
         
-            <div className="grid transition-transform duration-500 ease-in-out transform translate-x-[calc(-100%*${activeSlide})]">
+            <div className="grid transition-transform duration-500 ease-in-out transform translate-x-[calc(-100%*${activeSlide})]" 
+            // style={{ transform: `translateX(-${activeSlide * 100}%)` }}
+             >
               {slideData[activeSlide]}
             </div>
-
+       
           <div className="right pl-12 cursor-pointer" onClick={handleRightClick}>
           <i class="fa-solid fa-chevron-right text-4xl text-text-color"></i>
           </div>
