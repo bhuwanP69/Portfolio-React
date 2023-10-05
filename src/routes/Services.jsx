@@ -35,14 +35,15 @@ export  function Grid1() {
       }, []);
     return (
   
-     <div className="grid-1 relative flex flex-col  justify-center  items-start  bg-grid-color w-64 h-80">
+     <div className="grid-1 relative flex flex-col  justify-center  items-start  bg-grid-color
+     w-48 md:w-64 md:h-80 h-60">
         <div className="wrap pl-10 grid gap-5 ">
-        <div className="icon text-text-color text-4xl">
+        <div className="icon text-text-color text-2xl md:text-4xl">
         <iconify-icon icon="uil:web-grid"></iconify-icon>
         </div>
-        <h4 className="text-xl w-10 font-semibold ">Website Development</h4>
+        <h4 className=" text-lg md:text-xl w-10 font-semibold text-gray-200 ">Website Development</h4>
         <div className="view flex gap-2 item-center text-text-color transition-all cursor-pointer" onClick={handleButtonClick}>
-            <p>View More</p>
+            <p >View More</p>
             <i class="fa-solid fa-arrow-right duration-500  pt-1"></i>
         </div>
         </div>
@@ -112,12 +113,12 @@ export  function Grid1() {
       }, []);
     return (
   
-     <div className="grid-2 relative flex flex-col  justify-center  items-start  bg-grid-color w-64 h-80">
-        <div className="wrap pl-10 grid gap-5 ">
-        <div className="icon text-text-color text-4xl">
+     <div className="grid-2 relative flex flex-col  justify-center  items-start  bg-grid-color w-48 md:w-64 md:h-80 h-60">
+        <div className="wrap pl-5 md:pl-10 grid gap-5 ">
+        <div className="icon text-text-color text-2xl md:text-4xl">
         <iconify-icon icon="material-symbols:code"></iconify-icon>
         </div>
-        <h4 className="text-xl  font-semibold ">Custom Software Development</h4>
+        <h4 className="text-lg md:text-xl   font-semibold ">Custom Software Development</h4>
         <div className="view flex gap-2 item-center text-text-color transition-all cursor-pointer" onClick={handleButtonClick}>
             <p>View More</p>
             <i class="fa-solid fa-arrow-right duration-500  pt-1"></i>
@@ -188,7 +189,7 @@ export  function Grid1() {
       }, []);
     return (
   
-     <div className="grid-3 relative flex flex-col  justify-center  items-start  bg-grid-color w-64 h-80">
+     <div className="grid-3 relative flex flex-col  justify-center  items-start  bg-grid-color w-48 md:w-64 md:h-80 h-60">
         <div className="wrap pl-10 grid gap-5 ">
         <div className="icon text-text-color text-4xl">
         <iconify-icon icon="ph:pen"></iconify-icon>
@@ -234,12 +235,13 @@ export  function Grid1() {
 
 export default function Services() {
   return (
-    <div className="services h-screen pt-32" id="services">
+    <div className="services  pt-32" id="services">
         <div className="services text-center justify-center">
             <h2 className="text-4xl font-semibold">Services </h2>
             <p className="text-text-color text-sm pt-2">The value I offer You</p>
         </div>
-        <div className="flex items-center justify-center z-10 pt-10 gap-10">
+        <div className="md:flex grid  grid-cols-2   items-center justify-center z-10 pt-10  gap-8  pl-5 pr-5
+        ">
       <Grid1/>
       <Grid2/>
       <Grid3/>

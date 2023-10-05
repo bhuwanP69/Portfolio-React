@@ -57,8 +57,9 @@ export  function FullStack() {
       }
    
   return (
-    <div className="fullStack middle flex  justify-center gap-10 pb-20">
-         <div className="front">
+    <div className="fullStack middle md:flex  grid  justify-center   gap-10 pb-20">
+        {/* frontend */}
+         <div className="front pb-0 md:pb-10">
             <button onClick={handleFront}>
                 <div className="flex items-center gap-3">
                     <div className="icon text-3xl text-text-color">
@@ -68,7 +69,7 @@ export  function FullStack() {
                             {showFront ? (
                                <i className="fa-solid fa-chevron-up text-lg text-text-color"></i>
                               ) : (
-                                <i className="fa-solid fa-chevron-down text-lg text-text-color"></i>
+                                <i className="fa-solid fa-chevron-down text-lg text-text-color "></i>
                               )}
                         </div>
                         <p className='text-text-color -mt-6'>With 1+ years of experience</p>
@@ -77,6 +78,7 @@ export  function FullStack() {
                          <Frontend/>
                         }
                     </div>
+                    {/* backend  */}
                     <div className="back">
                         <button onClick={handleBack}>
                             <div className="flex items-center gap-3">
@@ -109,7 +111,7 @@ export default function Skills() {
       setShowWork(contentType === "work");
     }
     return (
-        <div className="skills grid h-screen pt-20 " id='skills'>
+        <div className="skills grid pt-20 " id='skills'>
 
             <div className="technologies">
                 <div className="up">
