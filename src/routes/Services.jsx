@@ -47,15 +47,17 @@ export  function Grid1() {
             <i class="fa-solid fa-arrow-right duration-500  pt-1"></i>
         </div>
         </div>
-        <div ref={moreInfoRef}  className={`click z-10  absolute left-36 top-0 pl-5 pt-5 border-gray-700 border-2 bg-grid-color h-64 w-[450px] rounded-lg ${showMoreInfo ? '' : 'hidden'}`}>
+        {/* absolute */}
+        {/* 1 */}
+        <div ref={moreInfoRef}  className={`click z-10  absolute left-0 top-0 pl-5 pt-5 border-gray-700 border-2 bg-grid-color h-64 w-[290px] md:w-[450px] rounded-lg ${showMoreInfo ? '' : 'hidden'}`}>
           <div className="top flex">
-
+            {/* absolute */}
         <button onClick={handleCloseClick} className="inline">
                     <i class="fa-solid fa-x absolute text-base top-5  right-3 text-text-color  p-1 rounded-full hover:scale-110 duration-500"></i>
                      </button>
-          <h1 className="text-xl font-semibold w-52 tracking-wide  pb-5">Web2 and Web3 Development</h1>
+          <h1 className=" text-lg md:text-xl font-semibold w-52 tracking-wide  pb-5">Web2 and Web3 Development</h1>
           </div>
-          <div className="lists grid gap-3 font-lg text-gray-400">
+          <div className="lists grid gap-3 text-base text-gray-400">
             <div className="one flex  items-center gap-2 ">
             <i class="fa-regular fa-circle-check text-text-color"></i>
             <p>Highly intuitive UI</p>
@@ -124,15 +126,16 @@ export  function Grid1() {
             <i class="fa-solid fa-arrow-right duration-500  pt-1"></i>
         </div>
         </div>
-        <div ref={moreInfoRef}  className={`click z-10 absolute -left-32 top-0 pl-5 pt-5 border-gray-700 border-2 bg-grid-color h-64 w-[450px] rounded-lg ${showMoreInfo ? '' : 'hidden'}`}>
+        {/* absolute  */}
+        <div ref={moreInfoRef}  className={`click z-10 absolute -left-32 top-0 pl-5 pt-5 border-gray-700 border-2 bg-grid-color h-64 w-[290px] md:w-[450px] rounded-lg ${showMoreInfo ? '' : 'hidden'}`}>
           <div className="top flex">
 
         <button onClick={handleCloseClick} className="inline">
                     <i class="fa-solid fa-x absolute text-base top-5  right-3 text-text-color  p-1 rounded-full hover:scale-110 duration-500"></i>
                      </button>
-          <h1 className="text-xl font-semibold w-52 tracking-wide  pb-5">Software Development</h1>
+          <h1 className=" text-lg md:text-xl font-semibold w-52 tracking-wide  pb-5">Software Development</h1>
           </div>
-          <div className="lists grid gap-3 font-lg text-gray-400">
+          <div className="lists grid gap-3 text-base text-gray-400">
             <div className="one flex  items-center gap-2 ">
             <i class="fa-regular fa-circle-check text-text-color"></i>
             <p>Easy to use</p>
@@ -200,15 +203,15 @@ export  function Grid1() {
             <i class="fa-solid fa-arrow-right duration-500  pt-1"></i>
         </div>
         </div>
-        <div ref={moreInfoRef}  className={`click z-10  absolute -left-96 top-0 pl-5 pt-5 border-gray-700 border-2 bg-grid-color h-64 w-[450px] rounded-lg ${showMoreInfo ? '' : 'hidden'}`}>
+        <div ref={moreInfoRef}  className={`click z-10  absolute left-0 md:-left-96 top-0 pl-5 pt-5 border-gray-700 border-2 bg-grid-color h-64  w-[290px] md:w-[450px] rounded-lg ${showMoreInfo ? '' : 'hidden'}`}>
           <div className="top flex">
 
         <button onClick={handleCloseClick} className="inline">
                     <i class="fa-solid fa-x absolute text-base top-5  right-3 text-text-color  p-1 rounded-full hover:scale-110 duration-500"></i>
                      </button>
-          <h1 className="text-xl font-semibold w-52 tracking-wide  pb-5">Support and Maintenance</h1>
+          <h1 className=" text-lg md:text-xl font-semibold w-52 tracking-wide  pb-5">Support and Maintenance</h1>
           </div>
-          <div className="lists grid gap-3 font-lg text-gray-400">
+          <div className="lists grid gap-3 text-base text-gray-400">
             <div className="one flex  items-center gap-2 ">
             <i class="fa-regular fa-circle-check text-text-color"></i>
             <p>Efficient Support</p>
