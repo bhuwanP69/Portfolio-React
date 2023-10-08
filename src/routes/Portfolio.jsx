@@ -8,16 +8,16 @@ const img3 = './src/images/portfolio3.jpg'
 
 export function Grid1() {
   return (
-   <div className="grid1  pl-8  h-72 pt-10  flex gap-16 pb-10 justify-center hover:shadow-xl transition-all">
-    <div className="left w-80  ">
+   <div className="grid1 px-12 sm:px-8 h-[450px] w-full  sm:h-72 pt-10  grid sm:flex gap-5 md:gap-16 pb-10 justify-center hover:shadow-xl transition-all">
+    <div className="left w-80 sm:w-64 md:w-80    pl-10">
       <img src={img1} alt="portfolio1" className="rounded-xl" />
       
     </div>
-    <div className="right w-80 font-sans">
-      <h3 className="text-xl font-semibold">Modern Consultancy Website</h3>
-      <p className="text-gray-400 pb-3 text-lg">Responsive modern website with adaptable UI components for Kdr Consultancy. Responsive in all device</p>
+    <div className="right  sm:w-80 md:w-72 sm:text-start text-center font-sans">
+      <h3 className=" text-lg md:text-xl font-semibold">Modern Consultancy Website</h3>
+      <p className="text-gray-400 pb-3 text-base md:text-lg ">Responsive modern website with adaptable UI components for Kdr Consultancy. Responsive in all device</p>
         <a href="https://kdrsingle.vercel.app/" target="_blank">
-      <button className="demo   w-28 flex items-center gap-2 px-5 py-4 bg-text-color  hover:opacity-80 rounded-lg transition-all ">
+      <button className="demo  w-28 flex items-center gap-2 px-5 py-4 bg-text-color  hover:opacity-80 rounded-lg transition-all ">
         <p>Demo</p>
         <i class="fa-solid fa-arrow-right text-sm"></i>
       </button>
@@ -100,26 +100,26 @@ const renderCircles = () => {
 };
 
   return (
-    <div className="portfolio h-screen  pt-20" id='portfolio'>
+    <div className="portfolio pt-20  pr-20" id='portfolio'>
           <div className="services text-center justify-center">
             <h2 className="text-4xl font-semibold">Portfolio</h2>
             <p className="text-text-color text-sm pt-2">My past works</p>
         </div>
-        <div className="middle   relative flex justify-center items-center pt-20">
-
-          <div className="left pr-12 cursor-pointer" onClick={handleLeftClick}>
-          <i class="fa-solid fa-chevron-left text-4xl text-text-color"></i>
-          </div>
-        
-            <div className="grid transition-transform duration-500 ease-in-out transform translate-x-[calc(-100%*${activeSlide})]" 
+        <div className="middle  flex justify-center items-center pt-20 px-16 sm:px-24 sm:pl-40">
+            <div className="grid relative transition-transform duration-500 ease-in-out transform translate-x-[calc(-100%*${activeSlide})]" 
             // style={{ transform: `translateX(-${activeSlide * 100}%)` }}
              >
               {slideData[activeSlide]}
+              
+          <div className="left absolute top-1/2 left-7  cursor-pointer" onClick={handleLeftClick}>
+          <i class="fa-solid fa-chevron-left text-2xl md:text-4xl text-text-color"></i>
+          </div>
+          <div className="right  absolute top-1/2 right-4 cursor-pointer" onClick={handleRightClick}>
+          <i class="fa-solid fa-chevron-right text-2xl md:text-4xl text-text-color"></i>
+          </div>
             </div>
        
-          <div className="right pl-12 cursor-pointer" onClick={handleRightClick}>
-          <i class="fa-solid fa-chevron-right text-4xl text-text-color"></i>
-          </div>
+         
         </div>
         
         <div className="bottom pt-16 flex  text-text-color  justify-center">
