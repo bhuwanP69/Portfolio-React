@@ -6,7 +6,7 @@ export default function Contact() {
             <h2 className="text-4xl font-semibold">Contact Me</h2>
             <p className="text-text-color text-sm pt-2">Get in touch</p>
         </div>
-        <div className="bottom flex justify-center gap-10  pt-20">
+        <div className="bottom grid sm:flex justify-start sm:justify-center gap-10 px-10 sm:px-20  pt-20">
           {/* left  */}
           
         <div className="left font-sans">
@@ -44,24 +44,24 @@ export default function Contact() {
         </div>
         {/* right  */}
         <div className="right grid gap-5">
-          <div className="first flex gap-5">
+          <div className="first grid md:flex gap-5">
             <div className="name relative">
-            <input type="text" required className=" h-20 w-full pt-3 pl-5 bg-grid-color rounded-lg outline-none" />
+            <input type="text" required className=" h-20 w-96 sm:w-[350px] md:w-48 pt-3 pl-5 bg-grid-color rounded-lg outline-none" />
             <label className="absolute left-3 top-3 text-sm">Name</label>
             </div>
             <div className="email relative">
-            <input type="email" required className=" h-20 w-52 pt-3 pl-5 bg-grid-color rounded-lg outline-none" />
+            <input type="email" required className=" h-20 w-96 sm:w-[350px] md:w-48 pt-3 pl-5 bg-grid-color rounded-lg outline-none" />
             <label className="absolute left-3 top-3 text-sm">Email</label>
             </div>
 
           </div>
           <div className="type relative">
-            <input type="text" required className=" h-20 w-full pt-3 pl-5 bg-grid-color rounded-lg outline-none" />
+            <input type="text" required className=" h-20 w-96 sm:w-[350px] md:w-full pt-3 pl-5 bg-grid-color rounded-lg outline-none" />
             <label className="absolute left-3 top-3 text-sm">What type of website do you need?</label>
             </div>
-            <div className="last flex gap-6 items-start">
+            <div className="last grid md:flex gap-6 items-start">
           <div className="type relative">
-            <textarea type="text"   required className=" h-56 pt-10 pl-5 resize bg-grid-color rounded-lg outline-none" />
+            <textarea type="text"   required className=" h-56 w-96 sm:w-[350px] md:w-56   pt-10 pl-5 resize bg-grid-color rounded-lg outline-none" />
             <label className="absolute left-3 top-3 text-sm">Additional message</label>
             </div>
             <button className='flex items-center justify-between hover:bg-button-color bg-text-color w-36 h-14 px-3  py-4 rounded-lg   transition-all'>

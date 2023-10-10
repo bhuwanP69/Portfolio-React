@@ -4,15 +4,12 @@ export default function BackToTop() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // Add a scroll event listener to check if the button should be visible or not
     const handleScroll = () => {
-      const shouldShowButton = window.scrollY > 200; // Change this value based on your preference
+      const shouldShowButton = window.scrollY > 200; 
       setIsVisible(shouldShowButton);
     };
 
-    window.addEventListener('scroll', handleScroll);
-
-    // Clean up the event listener on unmount
+    window.addEventListener('scroll', handleScroll)
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -22,7 +19,7 @@ export default function BackToTop() {
     // Scroll to the top of the page
     window.scrollTo({
       top: 0,
-      behavior: 'smooth', // You can remove this if you don't want smooth scrolling
+      behavior: 'smooth',
     });
   };
 
@@ -36,7 +33,6 @@ export default function BackToTop() {
       >
         <i class="fa-solid fa-arrow-up"></i>
       </button>
-      
     </div>
   );
 }
