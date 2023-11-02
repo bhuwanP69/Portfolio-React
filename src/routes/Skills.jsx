@@ -116,7 +116,7 @@ export default function Skills() {
             <div className="technologies">
                 <div className="up">
                     <div className="a-top flex flex-col items-center justify-center text-center  pb-20">
-                        <h2 className='text-5xl'>Technologies</h2>
+                        <h2 className='text-5xl text-black'>Technologies</h2>
                         <p className='text-text-color'>Expert proficiency</p>
                     </div>
                 </div>
@@ -128,7 +128,7 @@ export default function Skills() {
             <div className="qualification">
                 <div className="up pb-20">
                     <div className="a-top flex flex-col items-center justify-center text-center ">
-                        <h2 className='text-5xl'>Qualification</h2>
+                        <h2 className='text-5xl text-black'>Qualification</h2>
                         <p className='text-text-color'>Why you should hire me</p>
                     </div>
                 </div>
@@ -151,8 +151,8 @@ export default function Skills() {
                 </button>
                 </div>
                 {showEducation && (
-                 <div className="patan h-20 grid justify-center text-gray-400 pt-5 pr-32">
-                 <h6 className="text-xl font-semibold text-gray-300">Computer Science & IT</h6>
+                 <div className="patan h-20 grid justify-center pt-5 pr-32">
+                 <h6 className="text-xl font-semibold ">Computer Science & IT</h6>
                  <p className="">Patan multiple campus</p>
                  <div className="icon flex gap-2 items-center pt-2">
                  <i class="fa-solid fa-calendar-days"></i>
@@ -161,8 +161,8 @@ export default function Skills() {
              </div>
                      )}
                      {showWork && (
-                 <div className=" grid  h-20 justify-center text-gray-400 pt-5 pr-32">
-                <h6 className="text-xl font-semibold text-gray-300">Don't have any experience</h6>
+                 <div className=" grid  h-20 justify-center pt-5 pr-32">
+                <h6 className="text-xl font-semibold">Don't have any experience</h6>
             </div>
                     )}
             </div>

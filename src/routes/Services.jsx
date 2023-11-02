@@ -41,7 +41,7 @@ export  function Grid1() {
         <div className="icon text-text-color text-2xl md:text-4xl">
         <iconify-icon icon="uil:web-grid"></iconify-icon>
         </div>
-        <h4 className=" text-lg md:text-xl w-10 font-semibold text-gray-200 ">Website Development</h4>
+        <h4 className=" text-lg md:text-xl w-10 font-semibold ">Website Development</h4>
         <div className="view flex gap-2 item-center text-text-color transition-all cursor-pointer" onClick={handleButtonClick}>
             <p >View More</p>
             <i class="fa-solid fa-arrow-right duration-500  pt-1"></i>
@@ -53,11 +53,11 @@ export  function Grid1() {
           <div className="top flex">
             {/* absolute */}
         <button onClick={handleCloseClick} className="inline">
-                    <i class="fa-solid fa-x absolute text-base top-5  right-3 text-text-color  p-1 rounded-full hover:scale-110 duration-500"></i>
+                    <i class="fa-solid fa-x absolute text-base top-5  right-3 text-button-color  p-1 rounded-full hover:scale-110 duration-500"></i>
                      </button>
           <h1 className=" text-lg md:text-xl font-semibold w-52 tracking-wide  pb-5">Web2 and Web3 Development</h1>
           </div>
-          <div className="lists grid gap-3 text-base text-gray-400">
+          <div className="lists grid gap-3 text-base">
             <div className="one flex  items-center gap-2 ">
             <i class="fa-regular fa-circle-check text-text-color"></i>
             <p>Highly intuitive UI</p>
@@ -131,11 +131,11 @@ export  function Grid1() {
           <div className="top flex">
 
         <button onClick={handleCloseClick} className="inline">
-                    <i class="fa-solid fa-x absolute text-base top-5  right-3 text-text-color  p-1 rounded-full hover:scale-110 duration-500"></i>
+                    <i class="fa-solid fa-x absolute text-base top-5  right-3 text-button-color  p-1 rounded-full hover:scale-110 duration-500"></i>
                      </button>
           <h1 className=" text-lg md:text-xl font-semibold w-52 tracking-wide  pb-5">Software Development</h1>
           </div>
-          <div className="lists grid gap-3 text-base text-gray-400">
+          <div className="lists grid gap-3 text-base">
             <div className="one flex  items-center gap-2 ">
             <i class="fa-regular fa-circle-check text-text-color"></i>
             <p>Easy to use</p>
@@ -207,11 +207,11 @@ export  function Grid1() {
           <div className="top flex">
 
         <button onClick={handleCloseClick} className="inline">
-                    <i class="fa-solid fa-x absolute text-base top-5  right-3 text-text-color  p-1 rounded-full hover:scale-110 duration-500"></i>
+                    <i class="fa-solid fa-x absolute text-base top-5  right-3 text-button-color  p-1 rounded-full hover:scale-110 duration-500"></i>
                      </button>
           <h1 className=" text-lg md:text-xl font-semibold w-52 tracking-wide  pb-5">Support and Maintenance</h1>
           </div>
-          <div className="lists grid gap-3 text-base text-gray-400">
+          <div className="lists grid gap-3 text-base">
             <div className="one flex  items-center gap-2 ">
             <i class="fa-regular fa-circle-check text-text-color"></i>
             <p>Efficient Support</p>
@@ -240,7 +240,7 @@ export default function Services() {
   return (
     <div className="services  pt-32" id="services">
         <div className="services text-center justify-center">
-            <h2 className="text-4xl font-semibold">Services </h2>
+            <h2 className="text-4xl font-semibold text-black">Services </h2>
             <p className="text-text-color text-sm pt-2">The value I offer You</p>
         </div>
         <div className="md:flex grid  grid-cols-2   items-center justify-center z-10 pt-10  gap-8  pl-5 pr-5

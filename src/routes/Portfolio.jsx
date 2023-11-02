@@ -14,10 +14,10 @@ export function Grid1() {
       
     </div>
     <div className="right  w-80 sm:w-80 md:w-96 sm:text-start text-center font-sans">
-      <h3 className=" text-lg md:text-xl font-semibold">Modern Consultancy Website</h3>
-      <p className="text-gray-400 pb-3 text-base md:text-lg ">Responsive modern website with adaptable UI components for Kdr Consultancy. Responsive in all device</p>
+      <h3 className=" text-lg md:text-xl font-semibold text-black">Modern Consultancy Website</h3>
+      <p className=" pb-3 text-base md:text-lg ">Responsive modern website with adaptable UI components for Kdr Consultancy. Responsive in all device</p>
         <a href="https://kdrsingle.vercel.app/" target="_blank">
-      <button className="demo  w-28 flex items-center gap-2 px-5 py-4 bg-text-color  hover:opacity-80 rounded-lg transition-all ">
+      <button className="demo  w-28 flex items-center gap-2 px-5 py-4 bg-text-color  hover:text-black rounded-lg transition-all ">
         <p>Demo</p>
         <i class="fa-solid fa-arrow-right text-sm"></i>
       </button>
@@ -35,10 +35,10 @@ export function Grid2() {
       
     </div>
     <div className="right  w-80 sm:w-80 md:w-96 sm:text-start text-center font-sans">
-      <h3 className=" text-lg md:text-xl font-semibold">Log In Form</h3>
-      <p className="text-gray-400 pb-3 text-base md:text-lg ">It is Log In form with register.</p>
+      <h3 className=" text-lg md:text-xl font-semibold text-black">Log In Form</h3>
+      <p className=" pb-3 text-base md:text-lg ">It is Log In form with register.</p>
         <a href="https://registerloginwebsite.netlify.app/" target="_blank">
-      <button className="demo  w-28 flex items-center gap-2 px-5 py-4 bg-text-color  hover:opacity-80 rounded-lg transition-all ">
+      <button className="demo  w-28 flex items-center gap-2 px-5 py-4 bg-text-color   rounded-lg transition-all hover:text-black ">
         <p>Demo</p>
         <i class="fa-solid fa-arrow-right text-sm"></i>
       </button>
@@ -56,10 +56,10 @@ export function Grid3() {
       
     </div>
     <div className="right  w-80 sm:w-80 md:w-96 sm:text-start text-center font-sans">
-      <h3 className=" text-lg md:text-xl font-semibold">Github live users Loading</h3>
-      <p className="text-gray-400 pb-3 text-base md:text-lg ">Live User Filter using search</p>
+      <h3 className=" text-lg md:text-xl font-semibold text-black">Github live users Loading</h3>
+      <p className=" pb-3 text-base md:text-lg ">Live User Filter using search</p>
         <a href="https://liveuserfeeds.netlify.app/" target="_blank">
-      <button className="demo  w-28 flex items-center gap-2 px-5 py-4 bg-text-color  hover:opacity-80 rounded-lg transition-all ">
+      <button className="demo  w-28 flex items-center gap-2 px-5 py-4 bg-text-color hover:text-black rounded-lg transition-all ">
         <p>Demo</p>
         <i class="fa-solid fa-arrow-right text-sm"></i>
       </button>
@@ -95,7 +95,7 @@ const renderCircles = () => {
    >
      <FontAwesomeIcon
        icon={index === activeSlide ? faCircleSolid : faCircleSolid}
-       className={index === activeSlide ? 'solid-circle text-[9px] ' : 'solid-circle text-[9px] text-circle'}
+       className={index === activeSlide ? 'solid-circle text-[9px] ' : 'solid-circle text-[9px] text-footer'}
      />
    </div>
  ));
@@ -104,7 +104,7 @@ const renderCircles = () => {
   return (
     <div className="portfolio pt-20  pr-20" id='portfolio'>
           <div className="services text-center justify-center">
-            <h2 className="text-4xl font-semibold">Portfolio</h2>
+            <h2 className="text-4xl font-semibold text-black">Portfolio</h2>
             <p className="text-text-color text-sm pt-2">My past works</p>
         </div>
         <div className="middle pl-20   flex justify-center items-center pt-20 px-16 sm:px-24 sm:pl-40">

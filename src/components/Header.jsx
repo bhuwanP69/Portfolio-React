@@ -11,7 +11,7 @@ export default function Header() {
     <header className='fixed top-0 right-0 left-0 z-50'>
     <div className="header flex justify-between  items-center font-semibold font-sans ml-[12%] mr-[15%] h-0 md:h-16">
         <div className="left hidden md:flex">
-            <h1 className='cursor-pointer hover:text-text-color'>Bhuwan</h1>
+            <h1 className='cursor-pointer hover:text-button-color text-black'>Bhuwan</h1>
 
         </div>
         <div className="right hidden mr-20 md:flex  lg:mr-0 gap-6 w-[50%]  ">

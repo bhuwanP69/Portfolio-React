@@ -5,7 +5,7 @@ export default function Footer() {
     <div className="footer  w-full  grid justify-start md:justify-center bg-footer  pt-10 pl-10 h-full  md:h-72">
       <div className="md:flex md:gap-28 grid gap-10 ">
          <div className=" text-start">
-            <h2 className="md:text-4xl text-3xl font-semibold">Bhuwan</h2>
+            <h2 className="md:text-4xl text-3xl font-semibold text-black">Bhuwan</h2>
             <p className="text-text-color text-sm pt-2 whitespace-nowrap">Creative web developer</p>
         </div>
 
@@ -16,22 +16,25 @@ export default function Footer() {
            
         </div>
         <div className="right flex gap-10 w-full md:h-5 text-xl ">
-            <a href="" className=' cursor-pointer transition-all hover:text-hover'>
+            <a href="" className=' cursor-pointer transition-all hover:text-text-color'>
               
               <i class="fa-brands fa-facebook-f"></i>
             </a>
-            <a href="" className=' cursor-pointer transition-all hover:text-hover'>
+            <a href="" className=' cursor-pointer transition-all hover:text-text-color'>
               
             <i class="fa-brands fa-instagram"></i>
             </a>
-            <a href="" className=' cursor-pointer transition-all hover:text-hover text-2xl'>
+            <a href="" className=' cursor-pointer transition-all hover:text-text-color text-2xl'>
             <iconify-icon icon="ri:twitter-line"></iconify-icon>
             </a>
         </div>
       </div>
 
-      <div className="last text-center text-sm text-gray-400 py-10 pl-16 md:pl-0 font-sans ">
-        <p>© Tim Okonkwo. All right reserved.</p>
+      <div className="last text-center text-sm  py-10 pl-16 md:pl-0 font-sans ">
+        <p>© Bhuwan Paudel. All right reserved.</p>
+          <a href="https://timokonkwo.com/" className=' underline' target='_blank'>
+        <p className='pt-10'>Refrence from this website (timokonkwo) </p>
+          </a>
       </div>
     </div>
   )

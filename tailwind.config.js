@@ -7,12 +7,11 @@ export default {
   theme: {
     extend: {
     colors:{
-      'main-color' :"rgb(22,25,39)",
-      'text-color': '#576EE0',
-      'grid-color': '#1D2135',
-      'button-color': '#4156c4',
+      'text-color': '#e98074',
+      'grid-color': '#d8c3a5',
+      'button-color': '#e85a4f',
       'circle':'#212740',
-      'footer':'#0E101B',
+      'footer':'#d8c3a5',
       'hover': '#6e7cc2'
     }
     },
