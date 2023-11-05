@@ -9,7 +9,7 @@ function Main() {
   };
   const imageMy = 'https://live.staticflickr.com/65535/53301921526_f431ee79f9_w.jpg'
   return (
-    <div className="main flex justify-between pt-20 md:pt-44 pb-96 md:pb-0  pl-[12%] pr-[23%] " id='home'>
+    <div className="main flex justify-between pt-20 md:pt-44 pb-96 md:pb-0  pl-[12%] pr-[23%] " >
         {/* left  */}
         <div className="left flex-initial text-text-color text-xl mt-2 ">
           <div className="social grid gap-10">

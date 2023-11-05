@@ -8,7 +8,7 @@ const img3 = './src/images/portfolio3.jpg'
 
 export function Grid1() {
   return (
-   <div className="grid1 px-12 sm:px-8 w-[700px]  sm:h-72 pt-10  grid sm:flex gap-5 md:gap-12 pb-10 justify-center hover:shadow-xl transition-all">
+   <div className="grid1 px-12 sm:px-8 w-[700px]  sm:h-72 pt-10  grid sm:flex gap-5 md:gap-12 pb-10 justify-center  transition-all">
     <div className="left w-80 sm:w-64 md:w-80 md:pl-0  pl-10">
       <img src={img1} alt="portfolio1" className="rounded-xl" />
       
@@ -29,7 +29,7 @@ export function Grid1() {
 
 export function Grid2() {
   return (
-   <div className="grid1 px-12 sm:px-8 w-[700px]  sm:h-72 pt-10  grid sm:flex gap-5 md:gap-12 pb-10 justify-center hover:shadow-xl transition-all">
+   <div className="grid2 px-12 sm:px-8 w-[700px]  sm:h-72 pt-10  grid sm:flex gap-5 md:gap-12 pb-10 justify-center  transition-all">
     <div className="left w-80 sm:w-64 md:w-80 md:pl-0  pl-10">
     <img src={img2} alt="portfolio1" className="rounded-xl" />
       
@@ -50,7 +50,7 @@ export function Grid2() {
 
 export function Grid3() {
   return (
-   <div className="grid1 px-12 sm:px-8 w-[700px]  sm:h-72 pt-10  grid sm:flex gap-5 md:gap-12 pb-10 justify-center hover:shadow-xl transition-all">
+   <div className="grid3 px-12 sm:px-8 w-[700px]  sm:h-72 pt-10  grid sm:flex gap-5 md:gap-12 pb-10 justify-center  transition-all">
     <div className="left w-80 sm:w-64 md:w-80 md:pl-0  pl-10">
     <img src={img3} alt="portfolio1" className="rounded-xl" />
       
@@ -107,17 +107,16 @@ const renderCircles = () => {
             <h2 className="text-4xl font-semibold text-black">Portfolio</h2>
             <p className="text-text-color text-sm pt-2">My past works</p>
         </div>
-        <div className="middle pl-20   flex justify-center items-center pt-20 px-16 sm:px-24 sm:pl-40">
-            <div className="grid relative transition-transform duration-500 ease-in-out transform translate-x-[calc(-100%*${activeSlide})]" 
-            // style={{ transform: `translateX(-${activeSlide * 100}%)` }}
+        <div className="middle pl-20  flex justify-center items-center pt-20 px-16 sm:px-24 sm:pl-40">
+            <div className="grid relative transition-transform duration-500 ease-in-out transform translate-x-[calc(-100%*${activeSlide})]  hover:shadow-xl" 
              >
               {slideData[activeSlide]}
               
-          <div className="left absolute top-1/2 left-40 sm:left-10 md:-left-10   cursor-pointer" onClick={handleLeftClick}>
-          <i class="fa-solid fa-chevron-left text-2xl md:text-4xl text-text-color"></i>
+          <div className="left-port absolute top-1/2 left-40 sm:left-10 md:-left-10   cursor-pointer group-hover:shadow-xl p-1" onClick={handleLeftClick}>
+          <i class="fa-solid fa-chevron-left text-xl md:text-3xl text-text-color"></i>
           </div>
-          <div className="right  absolute top-1/2 right-28 sm:right-10 md:-right-10 cursor-pointer" onClick={handleRightClick}>
-          <i class="fa-solid fa-chevron-right text-2xl md:text-4xl text-text-color"></i>
+          <div className="right-port  absolute top-1/2 right-28 sm:right-10 md:-right-10 cursor-pointer group-hover:shadow-xl  p-1" onClick={handleRightClick}>
+          <i class="fa-solid fa-chevron-right text-xl md:text-3xl text-text-color"></i>
           </div>
             </div>
         </div>

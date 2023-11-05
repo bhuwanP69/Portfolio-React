@@ -1,29 +1,34 @@
-import BackToTop from "./components/BackToTop";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Main from "./components/Main";
-import About from "./routes/About";
-import Contact from "./routes/Contact";
-import Portfolio from "./routes/Portfolio";
-import Services from "./routes/Services";
-import Skills from "./routes/Skills";
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider
+} from 'react-router-dom'
 
-export default function App() {
- 
+// layouts
+import Header from './components/Header'
+import Home from './routes/Home';
+import NotFound from './routes/NotFound';
 
-  return (
+
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
     <>
-    <div className="body">
-   <Header/>
-   <Main/>
-   <About/>
-   <Skills/>
-   <Services/>
-   <Portfolio/>
-   <Contact/>
-   <Footer/>
-    </div>
-    <BackToTop/>
+      <Route path="/" element={<Header />}>
+        <Route index element={<Home/>} />
+      </Route>
+      
+      <Route path='*' element={<NotFound />} />
     </>
+  )
+  
+)
+
+function App() {
+  return (
+    <RouterProvider router={router} />
   );
 }
+
+export default App

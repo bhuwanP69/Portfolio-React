@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from 'react'
+import { NavLink, useLocation } from 'react-router-dom';
+import { Link } from 'react-scroll';
+import { Outlet} from "react-router-dom";
 
 export default function Header() {
   const [activeLink, setActiveLink] = useState('home'); 
@@ -6,61 +9,66 @@ export default function Header() {
   const handleLinkClick = (link) => {
     setActiveLink(link);
   };
+  const location = useLocation();
+
  
   return (
-    <header className='fixed top-0 right-0 left-0 z-50'>
-    <div className="header flex justify-between  items-center font-semibold font-sans ml-[12%] mr-[15%] h-0 md:h-16">
+    <header>
+    <div className="header fixed top-0 right-0 left-0 z-50 flex justify-between  items-center font-semibold font-sans ml-[12%] mr-[15%] h-0 md:h-16">
         <div className="left hidden md:flex">
             <h1 className='cursor-pointer hover:text-button-color text-black'>Bhuwan</h1>
 
         </div>
         <div className="right hidden mr-20 md:flex  lg:mr-0 gap-6 w-[50%]  ">
-            <a
-            href="#home"
-            className={` cursor-pointer hover:text-text-color ${activeLink === 'home' ? ' text-text-color' : ''}`}
+            <Link
+            to="home"
+            className={` ${location.pathname === '/route1' ? 'active' : '' }cursor-pointer hover:text-text-color ${activeLink === 'home' ? ' text-text-color' : ''}`}
             onClick={() => handleLinkClick('home')}
           >
             Home
-          </a>
-          <a
-            href="#about"
+          </Link>
+          <Link
+            to="about"
             className={`cursor-pointer hover:text-text-color ${activeLink === 'about' ? 'active text-text-color' : ''}`}
             onClick={() => handleLinkClick('about')}
           >
             About
-          </a>
-          <a
-            href="#skills"
+          </Link>
+          <Link
+            to="skills"
             className={`cursor-pointer hover:text-text-color  ${activeLink === 'skills' ? 'active text-text-color' : ''}`}
             onClick={() => handleLinkClick('skills')}
           >
             Skills
-          </a>
+          </Link>
 
-          <a
-            href="#services"
+          <Link
+            to="services"
             className={`cursor-pointer hover:text-text-color ${activeLink === 'services' ? 'active text-text-color' : ''}`}
             onClick={() => handleLinkClick('services')}
           >
             Services
-          </a>
-          <a
-            href="#portfolio"
+          </Link>
+          <Link
+            to="portfolio"
             className={`cursor-pointer hover:text-text-color  ${activeLink === 'portfolio' ? 'active text-text-color' : ''}`}
             onClick={() => handleLinkClick('portfolio')}
           >
             Portfolio
-          </a>
-          <a
-            href="#contact"
+          </Link>
+          <Link
+            to="contact"
             className={`cursor-pointer hover:text-text-color whitespace-nowrap ${activeLink === 'contact' ? 'active text-text-color' : ''}`}
             onClick={() => handleLinkClick('contact')}
           >
             Contact Me
-          </a>
+          </Link>
            
         </div>
     </div>
+    <main>
+        <Outlet />
+      </main>
     </header>
   )
 }
