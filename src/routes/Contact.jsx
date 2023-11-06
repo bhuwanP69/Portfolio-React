@@ -68,21 +68,6 @@ import { useForm } from "react-hook-form";
 }
 
 export default function Contact() {
-  const handleSubmit = () => {
-    console.log('button clicked')
-    const apiUrl = import.meta.env.VITE_REACT_APP_API_URL;
-    fetch(apiUrl, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log('Data saved:', data);
-      });
-
-  };
   return (
     
     <div className="contact  pb-20 pt-20" id='contact'>
