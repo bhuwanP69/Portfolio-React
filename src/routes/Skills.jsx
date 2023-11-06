@@ -27,7 +27,7 @@ import { useState } from "react";
     </div>
   )
 }
-// frontend
+// Backend
  function BackEnd() {
   return (
     <div className="backend uppercase grid gap-5">
