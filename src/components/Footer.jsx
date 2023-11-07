@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <div className="footer  w-full  grid justify-start md:justify-center bg-footer  pt-10 pl-10 h-full  md:h-72">
+    <div className="footer absolute  w-full  grid justify-start md:justify-center bg-footer  pt-10 pl-10 h-full  md:h-72">
       <div className="md:flex md:gap-28 grid gap-10 ">
          <div className=" text-start">
             <h2 className="md:text-4xl text-3xl font-semibold text-black">Bhuwan</h2>
@@ -16,15 +16,14 @@ export default function Footer() {
            
         </div>
         <div className="right flex gap-10 w-full md:h-5 text-xl ">
-            <a href="" className=' cursor-pointer transition-all hover:text-text-color'>
-              
-              <i class="fa-brands fa-facebook-f"></i>
+         
+            <a href="https://github.com/bhuwanP69" target='_blank'>
+          <i class="fa-brands fa-github cursor-pointer hover:text-button-color hover:scale-110 transition-all"></i>
             </a>
-            <a href="" className=' cursor-pointer transition-all hover:text-text-color'>
               
-            <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="" className=' cursor-pointer transition-all hover:text-text-color text-2xl'>
+            
+          
+            <a href="https://twitter.com/BhuwanP69" target='_blank' className=' cursor-pointer transition-all hover:text-text-color text-2xl'>
             <iconify-icon icon="ri:twitter-line"></iconify-icon>
             </a>
         </div>
