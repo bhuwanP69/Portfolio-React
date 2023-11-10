@@ -1,6 +1,8 @@
 import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
  export function LoginForm() {
   const { register, handleSubmit, formState: { errors },reset } = useForm();
+  const navigate = useNavigate();
 
   const onSubmit = (data) => {
     console.log("Data submitted:", data);
@@ -24,6 +26,7 @@ import { useForm } from "react-hook-form";
         console.log('Before form reset');
         reset();
         console.log('reset done')
+        navigate("/form");
       })
       .catch((error) => {
         console.error(error);
@@ -54,12 +57,15 @@ import { useForm } from "react-hook-form";
          <textarea type="text"  {...register("additional", { required: false })} className=" h-56 w-96 sm:w-[350px] md:w-56   pt-10 pl-5 resize bg-grid-color rounded-lg outline-none" />
          <label className="absolute left-3 top-3 text-sm">Additional message</label>
          </div>
+         
          <button className='flex items-center justify-between hover:bg-button-color bg-text-color w-36 h-14 px-3  py-4 rounded-lg   transition-all hover:text-black'>
            <button type="submit" className="-mt-1 text-sm"> Send Message </button>
+          
        <div className="icon text-xl">
        <iconify-icon icon="uil:message"></iconify-icon>
        </div>
      </button>
+         
      </div>
          </div>
      </form>

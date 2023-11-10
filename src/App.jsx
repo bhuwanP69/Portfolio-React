@@ -9,6 +9,7 @@ import {
 import Header from './components/Header'
 import Home from './routes/Home';
 import NotFound from './routes/NotFound';
+import Form from './routes/Form';
 
 
 
@@ -17,8 +18,10 @@ const router = createBrowserRouter(
     <>
       <Route path="/" element={<Header />}>
         <Route index element={<Home/>} />
+      
       </Route>
       
+        <Route path="/form" element={<Form />} />
       <Route path='*' element={<NotFound />} />
     </>
   )

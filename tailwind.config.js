@@ -12,7 +12,8 @@ export default {
       'button-color': '#e85a4f',
       'circle':'#212740',
       'footer':'#d8c3a5',
-      'hover': '#6e7cc2'
+      'hover': '#6e7cc2',
+      'formBg':'#0e1e25'
     }
     },
   },
