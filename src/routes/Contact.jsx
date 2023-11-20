@@ -38,23 +38,23 @@ import { useNavigate } from "react-router-dom";
      <div className="right grid gap-5">
        <div className="first grid md:flex gap-5">
          <div className="name relative">
-         <input type="text"  {...register("name", { required: true })}  className=" h-20 w-96 sm:w-[350px] md:w-48 pt-3 pl-5 bg-grid-color rounded-lg outline-none" />
+         <input type="text"  {...register("name", { required: true })}  className=" h-20 w-80 sm:w-[350px] md:w-48 pt-3 pl-5 bg-grid-color rounded-lg outline-none" />
         
          <label className="absolute left-3 top-3 text-sm">Name</label>
          </div>
          <div className="email relative">
-         <input type="email" required {...register("email", { required:true})} className=" h-20 w-96 sm:w-[350px] md:w-48 pt-3 pl-5 bg-grid-color rounded-lg outline-none" />
+         <input type="email" required {...register("email", { required:true})} className=" h-20 w-80 sm:w-[350px] md:w-48 pt-3 pl-5 bg-grid-color rounded-lg outline-none" />
          <label className="absolute left-3 top-3 text-sm">Email</label>
          </div>
 
        </div>
        <div className="type relative">
-         <input type="text"  {...register("type", { required: true })} className=" h-20 w-96 sm:w-[350px] md:w-full pt-3 pl-5 bg-grid-color rounded-lg outline-none" />
+         <input type="text"  {...register("type", { required: true })} className=" h-20 w-80 sm:w-[350px] md:w-full pt-3 pl-5 bg-grid-color rounded-lg outline-none" />
          <label className="absolute left-3 top-3 text-sm">What type of website do you need?</label>
          </div>
          <div className="last grid md:flex gap-6 items-start">
        <div className="type relative">
-         <textarea type="text"  {...register("additional", { required: false })} className=" h-56 w-96 sm:w-[350px] md:w-56   pt-10 pl-5 resize bg-grid-color rounded-lg outline-none" />
+         <textarea type="text"  {...register("additional", { required: false })} className=" h-56 w-80 sm:w-[350px] md:w-56   pt-10 pl-5 resize bg-grid-color rounded-lg outline-none" />
          <label className="absolute left-3 top-3 text-sm">Additional message</label>
          </div>
          

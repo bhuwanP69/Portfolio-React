@@ -36,7 +36,7 @@ export  function Grid1() {
     return (
   
      <div className="grid-1 relative flex flex-col  justify-center  items-start  bg-grid-color
-     w-48 md:w-64 md:h-80 h-60">
+     w-44 md:w-64 md:h-80 h-60">
         <div className="wrap pl-10 grid gap-5 ">
         <div className="icon text-text-color text-2xl md:text-4xl">
         <iconify-icon icon="uil:web-grid"></iconify-icon>
@@ -115,7 +115,7 @@ export  function Grid1() {
       }, []);
     return (
   
-     <div className="grid-2 relative flex flex-col  justify-center  items-start  bg-grid-color w-48 md:w-64 md:h-80 h-60">
+     <div className="grid-2 relative flex flex-col  justify-center  items-start  bg-grid-color w-44 md:w-64 md:h-80 h-60">
         <div className="wrap pl-5 md:pl-10 grid gap-5 ">
         <div className="icon text-text-color text-2xl md:text-4xl">
         <iconify-icon icon="material-symbols:code"></iconify-icon>
@@ -192,7 +192,7 @@ export  function Grid1() {
       }, []);
     return (
   
-     <div className="grid-3 relative flex flex-col  justify-center  items-start  bg-grid-color w-48 md:w-64 md:h-80 h-60">
+     <div className="grid-3 relative flex flex-col  justify-center  items-start  bg-grid-color w-44 md:w-64 md:h-80 h-60">
         <div className="wrap pl-10 grid gap-5 ">
         <div className="icon text-text-color text-4xl">
         <iconify-icon icon="ph:pen"></iconify-icon>

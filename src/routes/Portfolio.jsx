@@ -8,7 +8,7 @@ const img3 = './src/images/portfolio3.jpg'
 
 export function Grid1() {
   return (
-   <div className="grid1 px-12 sm:px-8 w-[700px]  sm:h-72 pt-10  grid sm:flex gap-5 md:gap-12 pb-10 justify-center  transition-all">
+   <div className="grid1 px-12 sm:px-8 w-[650px]  sm:h-72 pt-10  grid sm:flex gap-5 md:gap-12 pb-10 justify-center  transition-all">
     <div className="left w-80 sm:w-64 md:w-80 md:pl-0  pl-10">
       <img src={img1} alt="portfolio1" className="rounded-xl" />
       
@@ -29,7 +29,7 @@ export function Grid1() {
 
 export function Grid2() {
   return (
-   <div className="grid2 px-12 sm:px-8 w-[700px]  sm:h-72 pt-10  grid sm:flex gap-5 md:gap-12 pb-10 justify-center  transition-all">
+   <div className="grid2 px-12 sm:px-8 w-[650px]  sm:h-72 pt-10  grid sm:flex gap-5 md:gap-12 pb-10 justify-center  transition-all">
     <div className="left w-80 sm:w-64 md:w-80 md:pl-0  pl-10">
     <img src={img2} alt="portfolio1" className="rounded-xl" />
       
@@ -50,7 +50,7 @@ export function Grid2() {
 
 export function Grid3() {
   return (
-   <div className="grid3 px-12 sm:px-8 w-[700px]  sm:h-72 pt-10  grid sm:flex gap-5 md:gap-12 pb-10 justify-center  transition-all">
+   <div className="grid3 px-12 sm:px-8 w-[650px]  sm:h-72 pt-10  grid sm:flex gap-5 md:gap-12 pb-10 justify-center  transition-all">
     <div className="left w-80 sm:w-64 md:w-80 md:pl-0  pl-10">
     <img src={img3} alt="portfolio1" className="rounded-xl" />
       
@@ -107,7 +107,7 @@ const renderCircles = () => {
             <h2 className="text-4xl font-semibold text-black">Portfolio</h2>
             <p className="text-text-color text-sm pt-2">My past works</p>
         </div>
-        <div className="middle pl-20  flex justify-center items-center pt-20 px-16 sm:px-24 sm:pl-40">
+        <div className="middle  flex justify-center items-center  pl-24 sm:pl-40 pt-20 px-20 sm:px-24 ">
             <div className="grid relative transition-transform duration-500 ease-in-out transform translate-x-[calc(-100%*${activeSlide})]  hover:shadow-xl" 
              >
               {slideData[activeSlide]}
