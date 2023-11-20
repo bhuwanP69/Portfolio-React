@@ -162,7 +162,7 @@ export default function Skills() {
                      )}
                      {showWork && (
                  <div className=" grid  h-20 justify-center pt-5 pr-32">
-                <h6 className="text-xl font-semibold">Don't have any experience</h6>
+                <h6 className="text-xl font-semibold">Looking for work</h6>
             </div>
                     )}
             </div>
