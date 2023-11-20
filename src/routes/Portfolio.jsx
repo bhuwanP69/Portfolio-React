@@ -2,9 +2,9 @@ import { useState } from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircle as faCircleSolid } from '@fortawesome/free-solid-svg-icons';
 
-const img1 = './src/images/portfolio1.jpg'
-const img2 = './src/images/portfolio2.jpg'
-const img3 = './src/images/portfolio3.jpg'
+const img1 = 'https://live.staticflickr.com/65535/53343176737_944cb6e2d4_z.jpg'
+const img2 = 'https://live.staticflickr.com/65535/53343180677_e8918d13a7_z.jpg'
+const img3 = 'https://live.staticflickr.com/65535/53344513780_d82931a74a_z.jpg'
 
 export function Grid1() {
   return (
