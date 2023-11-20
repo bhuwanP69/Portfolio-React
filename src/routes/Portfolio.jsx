@@ -107,7 +107,7 @@ const renderCircles = () => {
             <h2 className="text-4xl font-semibold text-black">Portfolio</h2>
             <p className="text-text-color text-sm pt-2">My past works</p>
         </div>
-        <div className="middle  flex justify-center items-center  pl-24 sm:pl-40 pt-20 px-20 sm:px-24 ">
+        <div className="middle  flex justify-center items-center  pl-28 sm:pl-40 pt-20 px-24 ">
             <div className="grid relative transition-transform duration-500 ease-in-out transform translate-x-[calc(-100%*${activeSlide})]  hover:shadow-xl" 
              >
               {slideData[activeSlide]}
