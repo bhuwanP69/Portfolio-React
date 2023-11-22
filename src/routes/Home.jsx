@@ -12,7 +12,7 @@ import About from './About'
 export default function Home() {
   return (
   <>
-    <div className="home w-screen " id='home'>
+    <div className="home w-screen bg-body text-bodyText " id='home'>
          <Main/>
         <About/> 
         <Skills/>

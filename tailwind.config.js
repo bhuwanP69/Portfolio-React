@@ -14,7 +14,8 @@ export default {
       'footer':'#d8c3a5',
       'hover': '#6e7cc2',
       'formBg':'#0e1e25',
-      'body':'#eae7dc'
+      'body':'#eae7dc',
+      'bodyText':'#4e4d4d'
     }
     },
   },

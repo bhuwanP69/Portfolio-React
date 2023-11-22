@@ -23,7 +23,7 @@ export default function Header() {
  
   return (
     <header className=''>
-      <div className="smallScreen fixed flex  bottom-10 md:hidden justify-between w-full px-10 z-50">
+      <div className="smallScreen fixed flex  bottom-8 md:hidden justify-between w-full px-10 z-50">
 
       <Link to="home" smooth className="left text-lg">
             <h1 className='cursor-pointer hover:text-button-color text-black'>Bhuwan</h1>
