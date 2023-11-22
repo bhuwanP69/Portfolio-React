@@ -39,7 +39,7 @@ export default function Header() {
 
         <div className="clicked ">
           
-       <div className="right  grid grid-cols-3 gap-y-4 bg-body border-t border-gray-400  fixed  w-full bottom-0 z-50 p-5  ">
+       <div className="right grid grid-cols-3 gap-y-4  bg-body border-t border-gray-400  fixed  w-full bottom-0 pb-10 z-50 p-5   ">
             <Link
             to="home"
             className={` ${location.pathname === '/route1' ? 'active' : '' }cursor-pointer hover:text-text-color ${activeLink === 'home' ? ' text-text-color' : ''} flex flex-col items-center `}
@@ -102,7 +102,7 @@ export default function Header() {
             </div>
           <p>Contact Me</p>
           </Link>   
-          <div onClick={closeButton} className=" text-button-color text-2xl cross absolute right-6 bottom-0   cursor-pointer h-8 p-1 rounded-xl">
+          <div onClick={closeButton} className=" text-button-color text-2xl cross absolute right-8 bottom-2   cursor-pointer h-8 p-1 rounded-xl">
           <iconify-icon icon="ph:x-bold"></iconify-icon></div> 
         </div>
 
