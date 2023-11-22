@@ -29,7 +29,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="last text-center text-sm  py-10 pl-0 md:pl-0 font-sans ">
+      <div className="last text-start md:text-center text-sm  py-10 pl-0 md:pl-20 font-sans ">
         <p>© Bhuwan Paudel. All right reserved.</p>
           <a href="https://timokonkwo.com/" className=' underline' target='_blank'>
         <p className='pt-10'>Refrence from this website (timokonkwo) </p>
