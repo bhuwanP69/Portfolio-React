@@ -102,7 +102,7 @@ export default function Header() {
             </div>
           <p>Contact Me</p>
           </Link>   
-          <div onClick={closeButton} className=" text-button-color text-2xl cross absolute right-8 bottom-2   cursor-pointer h-8 p-1 rounded-xl">
+          <div onClick={closeButton} className=" text-button-color text-2xl cross absolute right-6 top-2   cursor-pointer h-8 p-1 rounded-xl">
           <iconify-icon icon="ph:x-bold"></iconify-icon></div> 
         </div>
 
